@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+.mainContainer {
+  background: linear-gradient(
+    124deg,
+    #6f8db4,
+    #3d87ab,
+    #0f3e5d,
+    rgb(233, 186, 92),
+    rgb(219, 134, 59)
+  );
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 30s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+
+  width: 96%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-inline: 2%;
+}
+
+.lhsContainer {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+  border-radius: 0;
+}
+
+.temperatureContainer {
+  font-size: 20rem;
+  font-weight: 100;
+}
+
+.rhsContainer {
+  width: 70%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inputContainer {
+  width: 70%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-inline: 0.5%;
+
+  background: rgba(245, 239, 239, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.inputContainerSearchbar {
+  width: 90%;
+  height: 80%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-left: 2%;
+  font-size: 1.5rem;
+}
+
+.inputContainerbtn {
+  width: 6%;
+  height: 80%;
+  /* outline: none; */
+
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.inputContainerbtn:hover {
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.weatherDetails {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weatherContainer {
+  width: 30%;
+  height: 90%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background: rgba(245, 239, 239, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.humidityContainer {
+  width: 30%;
+  background-color: cadetblue;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background: rgba(245, 239, 239, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.windspeedContainer {
+  width: 30%;
+  background-color: rgb(9, 39, 231);
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background: rgba(245, 239, 239, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.windspeedContainer:hover,
+.humidityContainer:hover,
+.weatherContainer:hover {
+  border: 3px solid white;
+}
+
+.font {
+  font-size: 1.5rem;
+}
